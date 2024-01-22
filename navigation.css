@@ -1,0 +1,112 @@
+/* Główne zmienne ciała strony - customizacja kolorystyki */
+:root{
+    /* Kolory podstawowe*/
+    --text: #061307;
+    --background: #f8fcf8;
+    --primary: #4ac452;
+    --secondary: #97cedd;
+    --accent: #74a0d2;
+    
+    /* Gradienty*/
+    --linearPrimarySecondary: linear-gradient(#4ac452, #97cedd);
+    --linearPrimaryAccent: linear-gradient(#4ac452, #74a0d2);
+    --linearSecondaryAccent: linear-gradient(#97cedd, #74a0d2);
+    --radialPrimarySecondary: radial-gradient(#4ac452, #97cedd);
+    --radialPrimaryAccent: radial-gradient(#4ac452, #74a0d2);
+    --radialSecondaryAccent: radial-gradient(#97cedd, #74a0d2);
+
+}
+
+/* Customizacja paska nawigacji*/
+/* Kolor tła*/
+.navbar-custom {
+    background-color: var(--secondary);
+
+}
+
+
+/* Dostęp do tekstu*/
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: italic;
+}
+/* Dostęp do linków*/
+.navbar-custom .navbar-nav .nav-link {
+    color: var(--text);
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+}
+/* Dostęp do najechanych linków*/
+.navbar-custom .nav-item:hover .nav-link {
+    -webkit-animation: jello-horizontal 0.9s both;
+	        animation: jello-horizontal 0.9s both;
+
+}
+
+/* Animacja po najechaniu na link*/
+@-webkit-keyframes jello-horizontal {
+    0% {
+      -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+    }
+    30% {
+      -webkit-transform: scale3d(1.25, 0.75, 1);
+              transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+      -webkit-transform: scale3d(0.75, 1.25, 1);
+              transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+      -webkit-transform: scale3d(1.15, 0.85, 1);
+              transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+      -webkit-transform: scale3d(0.95, 1.05, 1);
+              transform: scale3d(0.95, 1.05, 1);
+    }
+    75% {
+      -webkit-transform: scale3d(1.05, 0.95, 1);
+              transform: scale3d(1.05, 0.95, 1);
+    }
+    100% {
+      -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+    }
+  }
+  @keyframes jello-horizontal {
+    0% {
+      -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+    }
+    30% {
+      -webkit-transform: scale3d(1.25, 0.75, 1);
+              transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+      -webkit-transform: scale3d(0.75, 1.25, 1);
+              transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+      -webkit-transform: scale3d(1.15, 0.85, 1);
+              transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+      -webkit-transform: scale3d(0.95, 1.05, 1);
+              transform: scale3d(0.95, 1.05, 1);
+    }
+    75% {
+      -webkit-transform: scale3d(1.05, 0.95, 1);
+              transform: scale3d(1.05, 0.95, 1);
+    }
+    100% {
+      -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+    }
+  }
+  

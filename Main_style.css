@@ -1,0 +1,68 @@
+
+/* Główne zmienne ciała strony - customizacja kolorystyki */
+:root{
+    /* Kolory podstawowe*/
+    --text: #061307;
+    --background: #f8fcf8;
+    --primary: #4ac452;
+    --secondary: #97cedd;
+    --accent: #74a0d2;
+    
+    /* Gradienty*/
+    --linearPrimarySecondary: linear-gradient(#4ac452, #97cedd);
+    --linearPrimaryAccent: linear-gradient(#4ac452, #74a0d2);
+    --linearSecondaryAccent: linear-gradient(#97cedd, #74a0d2);
+    --radialPrimarySecondary: radial-gradient(#4ac452, #97cedd);
+    --radialPrimaryAccent: radial-gradient(#4ac452, #74a0d2);
+    --radialSecondaryAccent: radial-gradient(#97cedd, #74a0d2);
+
+}
+
+/* Czcionka nagłównkowa */
+.nunito {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+}
+/* Czcionka podstawowa*/
+.pt-sans-regular {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .pt-sans-regular-italic {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .pt-sans-bold {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .pt-sans-bold-italic {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+
+/* Ustawienie stylu elementu body*/
+body{
+    /* Kolor tła*/
+    background-color: var(--background);
+    /* Napisy*/
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--text)
+    
+}
+html, body {
+  scroll-behavior: smooth;
+}
+
+

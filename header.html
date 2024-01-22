@@ -1,0 +1,78 @@
+<link rel="stylesheet" href="./header.css">
+
+    <div id="bg-cont"class="bg">
+
+        <div class="floating_obj-cont">
+            <div id="rocket" class="floating_obj">
+                🚀
+            </div>
+        </div>
+    
+        <div class="main_zone nunito">
+            <div class="napis"><h1> Wynieś swój biznes <br>w <span class="typeText">Przestrzeń</span></h1></div>
+            <span class="main_zone-text">Tworzę strony internetowe, które wyróżniają się <strong>nie</strong> tylko wyglądem, ale też spełniają potrzeby użytkowników
+            z zastosowaniem strategii SXO. To nie jest kolejna oferta WordPress! Zadbam o wizytówkę twojej firmy zaczynając od solidnego kodu.
+            <p></p>
+            </span>
+
+            <div class="buttons-cont">
+                <button class="btn-i" type="buton">INFO</button>
+                <button class="btn-contact" type="buton">KONTAKT</button>
+            </div>
+        </div>
+        
+    </div>
+    <div class="bot-cont ">
+        
+        <svg  class="vibrate-1" style=" width: 32px; height: 32px;" fill="#000000" height="64px" width="64px" version="1.1" id="Layer_1" 
+        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+        viewBox="0 0 330 330" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" 
+        stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="XMLID_169_"> <path id="XMLID_197_" 
+        d="M304.394,139.394l-139.39,139.393L25.607,139.393c-5.857-5.857-15.355-5.858-21.213,0.001 c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393s7.794-1.581,10.606-4.394l149.996-150 c5.858-5.858,5.858-15.355,0-21.213C319.749,133.536,310.251,133.535,304.394,139.394z">
+        </path> <path id="XMLID_221_" d="M154.398,190.607c2.813,2.813,6.628,4.393,10.606,4.393s7.794-1.581,10.606-4.394l149.996-150 c5.858-5.858,5.858-15.355,0-21.213c-5.857-5.858-15.355-5.858-21.213,0l-139.39,139.393L25.607,19.393 c-5.857-5.858-15.355-5.858-21.213,0c-5.858,5.858-5.858,15.355,0,21.213L154.398,190.607z">
+        </path> </g> </g></svg>
+        
+    </div>
+
+        
+    
+
+
+
+<script>
+
+const backgroundContainer = document.getElementById('bg-cont');
+    const backgrounds = ['layer_peaks_2.svg', 'layere_peaks_3.svg', 'layer_peaks_1.svg'];
+    let currentBackgroundIndex = 0;
+
+    function changeBackground() {
+      currentBackgroundIndex = (currentBackgroundIndex + 1) % backgrounds.length;
+      const newBackground = backgrounds[currentBackgroundIndex];
+      backgroundContainer.style.backgroundImage = `url('${newBackground}')`;
+    }
+
+    
+
+    window.addEventListener('scroll', function() {
+    const scrollPosition = window.scrollY;
+
+    if (scrollPosition > 50) {
+         changeBackground();
+    } else {
+        
+    }
+});
+</script>
+
+<script>
+    const Rocket = document.getElementById('rocket');
+    const State = '--hide_animation';
+
+    Rocket.addEventListener('click', () => {
+        const currentState = document.documentElement.style.getPropertyValue(State).trim();
+        console.log('Aktualny stan:', currentState);
+        if (currentState !== 'paused'){document.documentElement.style.setProperty(State,'paused');}
+        else if (currentState !== 'infinite'){document.documentElement.style.setProperty(State,'running');}
+        console.log('Nowy stan:', document.documentElement.style.getPropertyValue(State).trim());
+    });
+</script>
